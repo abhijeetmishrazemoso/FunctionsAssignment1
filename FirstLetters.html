@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function firstLetters(word1,word2){
+            word1 = word1 + "";
+            word2 = word2 + "";
+            return word1.charAt(0)+word2.charAt(0);
+        }
+        function display(){
+            alert(firstLetters(document.getElementById("FirstName").value,
+            document.getElementById("ScondName").value));
+        }
+
+    </script>
+</head>
+<body>
+    <form action="" method="get">
+        <input id="FirstName" type="text">
+        <input id="ScondName" type="text">
+        <button onclick="display()">Click Me!</button>
+    </form>
+</body>
+</html>
